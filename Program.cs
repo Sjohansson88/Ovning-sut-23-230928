@@ -6,6 +6,7 @@ namespace Ovning_sut_23_230928
     {
         static void Main(string[] args)
         {
+            Meny();
 
         }
         public void Addition()
@@ -21,11 +22,12 @@ namespace Ovning_sut_23_230928
 
             Console.WriteLine("{0} adderat med {0} = {0}.", arr[0], arr[1], (arr[0] + arr[1]));
 
+
+            
+
         }
         static void Meny()
         {
-            Program Addition = new Program();
-            
             bool program = true;
 
             while (program)
@@ -42,7 +44,6 @@ namespace Ovning_sut_23_230928
                 switch (choice)
                 {
                     case 1:
-                        Addition.Addition();
                         break;
                     case 2:
                         break;
@@ -58,11 +59,11 @@ namespace Ovning_sut_23_230928
             }
         }
 
-        //static int Multiplikation()
-        //{
-        //    Console.Write("Skriv in ditt första tal du vill multiplicera: ");
+        static int Multiplikation()
+        {
+            Console.Write("Skriv in ditt första tal du vill multiplicera: ");
 
-        //}
+        }
 
     }
 }
